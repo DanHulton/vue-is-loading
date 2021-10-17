@@ -1,0 +1,19 @@
+{
+  "name": "vue-is-loading",
+  "version": "0.0.1",
+  "description": "A Vue 3 JavaScript port of https://github.com/VitorLuizC/vue-loadable",
+  "main": "src/index.js",
+  "repository": "https://github.com/DanHulton/vue-is-loading.git",
+  "author": "Dan Hulton <dan@danhulton.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "vue": "^3"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "loading",
+    "spinner"
+  ]
+}
