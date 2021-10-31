@@ -98,7 +98,7 @@ const submit = async () => {
 
 If you want to use `$isLoading` as part of a `computed()` variable in a Composition API situation:
 
-```vue
+```javascript
 const agreeToTos = ref(false);
 
 const instance = getCurrentInstance();
