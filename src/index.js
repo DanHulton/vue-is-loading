@@ -1,5 +1,5 @@
 import { getCurrentInstance } from 'vue';
-import get from 'lodash/get';
+import { get } from 'lodash';
 import callWithHooks from './callWithHooks';
 
 /**
