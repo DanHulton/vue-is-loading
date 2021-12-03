@@ -109,6 +109,6 @@ const submitDisabled = computed(
 
 ## Changelog
 
-### 1.0.1
+### 1.0.2
 
 - Fixes `loadable` to work with Vue's Composition API with `<script setup>`.
