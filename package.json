@@ -1,6 +1,6 @@
 {
   "name": "vue-is-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue 3 JavaScript port of https://github.com/VitorLuizC/vue-loadable",
   "main": "src/index.js",
   "repository": "https://github.com/DanHulton/vue-is-loading.git",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "lodash": "^4.17.21",
     "vue": "^3"
   },
   "keywords": [

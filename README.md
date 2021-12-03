@@ -106,3 +106,9 @@ const submitDisabled = computed(
   () => instance.ctx.$isLoading('signup') || agreeToTos.value === false,
 );
 ```
+
+## Changelog
+
+### 1.0.1
+
+- Fixes `loadable` to work with Vue's Composition API with `<script setup>`.

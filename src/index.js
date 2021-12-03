@@ -44,8 +44,8 @@ export const loadable = (method, state = 'unknown') => {
   const instance = getCurrentInstance();
 
   return function() {
-    const methods = this || instance.ctx;
-    const context = this || instance.appContext.config.globalProperties;
+    const methods = get(instance, 'ctx', this);
+    const context = get(instance, 'appContext.config.globalProperties', this);
 
     methods.$setLoading(state);
 
