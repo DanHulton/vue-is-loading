@@ -23,12 +23,12 @@ const LoadableMixin = {
 
     $setLoading(state = 'unknown') {
       const value = this.LOADING_STATES[state];
-      this.$set(this.LOADING_STATES, state, value ? value + 1 : 1);
+      this.LOADING_STATES[state] = value ? value + 1 : 1;
     },
 
     $unsetLoading(state = 'unknown') {
       const value = this.LOADING_STATES[state];
-      this.$set(this.LOADING_STATES, state, value ? value - 1 : 0);
+      this.LOADING_STATES[state] = value ? value - 1 : 0;
     },
   },
 };

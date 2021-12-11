@@ -109,6 +109,10 @@ const submitDisabled = computed(
 
 ## Changelog
 
+### 1.0.4
+
+- Removes use of `this.$set`, since Vue 3 does not require them.
+
 ### 1.0.3
 
 - Fixes `loadable` to work with Vue's Composition API with `<script setup>`.
