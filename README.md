@@ -109,6 +109,10 @@ const submitDisabled = computed(
 
 ## Changelog
 
+### 1.0.5
+
+- Adds `instance` to properties of `loadable` for use in Composition API components with `script setup`.
+
 ### 1.0.4
 
 - Removes use of `this.$set`, since Vue 3 does not require them.

@@ -39,11 +39,12 @@ const LoadableMixin = {
  * resolve/return.
  *
  * @param {Function} method - The method to wrap.
- * @param {string} state - The loading state name.  "unknown" if not defined.
+ * @param {string} state - The loading state name.
+ * @param {Object} instance - If being used in a composition API component with script setup, this
+ *                            provides the current Vue instance that would be otherwise unavailable.
+ *
  */
-export const loadable = (method, state = 'unknown') => {
-  const instance = getCurrentInstance();
-
+export const loadable = (method, state, instance = null) => {
   return function() {
     const methods = get(instance, 'ctx', this);
     const context = get(instance, 'appContext.config.globalProperties', this);
